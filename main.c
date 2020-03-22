@@ -10,7 +10,13 @@
 
 #include <stdio.h>
 
+typedef struct{
+	int idReserva;
+	char nombre[];
+	char correo[];
+	// ...
 
+}Reserva;
 
 int main(void) {
 
