@@ -10,13 +10,22 @@
 
 #include <stdio.h>
 
+
+// structura con todos los datos
+// de una reserva
 typedef struct{
 	int idReserva;
-	char nombre[];
+	//char nombre[];
 	char correo[];
 	// ...
 
 }Reserva;
+
+
+// manu de opciones de reserva
+
+// Mostrar rserva final
+
 
 int main(void) {
 
