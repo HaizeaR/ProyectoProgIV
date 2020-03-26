@@ -2,56 +2,67 @@
  * main.c
  *
  *  Created on: Feb 22, 2020
- *      Author: Haizea
+ *      Author: Unai Mendiondo, Mireya Quintana y Haizea Rodriguez
  */
 
 
-// Prueba de repositorio
-
 #include <stdio.h>
-//hfghfjhgjkk
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+#include "menu.h"
 
-// structura con todos los datos
-// de una reserva
-typedef struct{
-	int idReserva;
-	//char nombre[];
-	char correo[];
-	// ...
-
-}Reserva;
+#define MAX_LINE 10
 
 
-// manu de opciones de reserva
-
-// Mostrar rserva final
 
 
 int main(void) {
 
+	char * d[4];
 
-	printf("Bienvenido a la cadena de hoteles ... \n\n");
-	// \n\n doble salto de linea
-
-	int opcion;
-	// Meter ciudades en Array ?? y si pongo 1 saque el de la pos 0 ?
-	// realmente hacer con BD
-	do{
-		printf("¿Dónde quieres ir? \n" );
-
-			printf( " \t1. Madrid \n"
-					" \t2. Barcelona\n"
-					" \t3. Bilabo\n"
-					" \t4. Sevilla\n\n" );
-
-			printf("Introduce tu opción:  " );
-			   scanf( "%d", &opcion );
-			  // printf("%d", opcion);
+	d[0]= (char*)malloc(sizeof(char)*7);
 
 
-	}while ( opcion >= 5 );
 
-    return 0;
+	// d[0] = "Madrid";
+	 d[1]= "Barcelona";
+	 d[2]= "Bilbao";
+	 d[3]= "Sevilla";
+	 d[4]= "Granda";
+
+
+
+
+
+
+	//Reserva reserva;
+	Reserva * reserva[1];
+
+	seleccionarDestino(reserva);
+	//mostrarFechas(reserva);
+	seleccionarPersonas(reserva);
+	seleccionarPension(reserva);
+	seleccionarParking(reserva);
+	resumenDeDatos(reserva, d);
+	if ( continuarCompra() == 1){
+		datosComprador(reserva);
+		mostrarDatosComprador(reserva);
+	}else{
+		printf("Su reserva ha sido cancelada\n ");
+	}
+
+	// guardar fichero ( escritura )
+
+	// mostrar reservas ( lectura de fichero )
+
+
+
+
+	free(reserva);
+	return 0;
+
+
 
 }
 
