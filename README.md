@@ -17,14 +17,14 @@ A continuación, comenzará el proceso de reserva. El cliente deberá insertar u
 
 Este programa permite si se selecciona la opción 1 entrar como administrador y realizar las funciones pertinentes o si selecciona la opción 2 realizar una compra. 
 
-##OO
+## OO
 
 Para la parte de OO de nuestro proyecto hemos decidido utilizar la siguiente herencia:
 
 La herencia se constituye de las clases “Usuario”, “Cliente” y “Admin”, siendo “Usuario” la clase padre y las restantes las clases hijas. De esta manera tanto a clientes como administradores pese a tener diferentes funcionalidades los dos son tipos de usuarios que comparten los atributos y métodos básicos.
 
 
-##BD
+## BD
 
 En nuestro programa utilizamos una BD para gestionar toda la información.  La BD y sus tablas se crea la primera vez que se ejecuta el programa y se insertan ciertos valores por defecto, como los tres hoteles con sus correspondientes administradores y los tipos de pensión. 
 
