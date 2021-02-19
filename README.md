@@ -21,7 +21,7 @@ Este programa permite si se selecciona la opción 1 entrar como administrador y 
 
 Para la parte de OO de nuestro proyecto hemos decidido utilizar la siguiente herencia:
 
-> La herencia se constituye de las clases “Usuario”, “Cliente” y “Admin”, siendo “Usuario” la clase padre y las restantes las clases hijas. De esta manera tanto a clientes como administradores pese a tener diferentes funcionalidades los dos son tipos de usuarios que comparten los atributos y métodos básicos.
+La herencia se constituye de las clases “Usuario”, “Cliente” y “Admin”, siendo “Usuario” la clase padre y las restantes las clases hijas. De esta manera tanto a clientes como administradores pese a tener diferentes funcionalidades los dos son tipos de usuarios que comparten los atributos y métodos básicos.
 
 
 #BD
